@@ -1,0 +1,53 @@
+/* Pour ces exercices, inutile d'utiliser les :hover. 
+(Cependant, toutes les transitions sont utilisables en :hover) */
+.mes-rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle1 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    transform: rotate(30deg);
+}
+
+/* Appliquer une transformation de son choix */
+
+
+.rectangle2 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    transform: translate(400px, -25px) scale(2)
+}
+
+/*Appliquer deux ou plus de transformations   */
+
+.rectangle3 {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    transform: skew(30deg, 20deg);
+    transition: background-color 7s;
+}
+
+/*Mélanger les concepts de transformation et de transition  */
+
+.rectangle4 {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    margin-left: 300px;
+    transition: margin-left 5.5s cubic-bezier(0, 2.04, 1, -1.27);
+}
+
+/*Mélanger les concepts et utiliser cubic-bezier  */
+
+.rectangle5 {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+}
+
+/*  Libre */

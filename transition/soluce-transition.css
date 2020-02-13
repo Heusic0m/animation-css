@@ -1,0 +1,62 @@
+/* Pour ces exercices, inutile d'utiliser les :hover. 
+(Cependant, toutes les transitions sont utilisables en :hover) */
+.mes-rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle1 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    transition: background-color 7s;
+}
+
+/* faire apparaître le rectangle de la couleur de son choix. 
+Le rectangle doit s'afficher en moins dans un délais de 3 à 9secondes */
+
+
+.rectangle2 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    margin-left: 200px;
+    transition: margin-left 5s linear;
+}
+
+/*Après un  délai de quelques secondes, (au choix)déplacer le rectangle dans la direction de ton choix 
+de manière linéaire.   */
+
+.rectangle3 {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    margin-left: 200px;
+    transition: margin-left 5s ease-in 4s;
+}
+
+/*Faire apparaître le rectangle dans la couleur de son choix.
+Déplacer la carré dans la direction de ton choix de plus en plus vite ou de moins en moins vite.
+Le tout après un délai de 4secondes  */
+
+.rectangle4 {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    color: blue;
+    border-radius: 100%;
+    transition: border-radius 4s 3s, color 3s
+}
+
+/*Changer la couleur du font en 3secondes.
+Après délai transformer la forme en rond.   */
+
+.rectangle5 {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    margin-left: 200px;
+    transition: margin-left 5.5s cubic-bezier(1, -0.46, 1, -0.51)
+}
+
+/*  Libre */

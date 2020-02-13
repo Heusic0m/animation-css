@@ -1,0 +1,68 @@
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.coloriser {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    background-color: black;
+
+
+}
+
+.coloriser:hover {
+    background-color: yellow;
+}
+
+
+.agrandir {
+    width: 100%;
+    background-color: black;
+
+}
+
+.agrandir:hover {
+    width: 2500px;
+    height: 120px;
+}
+
+.deplacer {
+    width: 100%;
+    background-color: black;
+}
+
+.deplacer:hover {
+    position: relative;
+    top: 100px;
+}
+
+.change-font {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.change-font:hover {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.effacer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.effacer:hover {
+    display: none;
+}

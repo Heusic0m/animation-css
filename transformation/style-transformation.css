@@ -1,0 +1,66 @@
+/* Pour ces exercices, inutile d'utiliser les :hover. 
+(Cependant, toutes les transitions sont utilisables en :hover) 
+Quelques commandes utiles:
+EN TRANSFORMATION:
+- matrix()
+- translate()
+- scale()
+- rotate()
+- skew()
+
+EN TRANSITION:
+- transition-property
+-transition-duration
+-transition-timing-function
+(ease : rapide au début et ralenti à la fin
+linear
+ease-in : lent au début et accélère de plus en plus à la fin
+ease-out : rapide au début et de plus en plus lent à la fin
+ease-in-out : départ et fin lentes.
+-transition-delay 
+*/
+*/ .mes-rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle1 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+}
+
+/* Appliquer une transformation de son choix */
+
+
+.rectangle2 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+}
+
+/*Appliquer deux ou plus de transformations   */
+
+.rectangle3 {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+}
+
+/*Mélanger les concepts de transformation et de transition  */
+
+.rectangle4 {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+}
+
+/*Mélanger les concepts et utiliser cubic-bezier  */
+
+.rectangle5 {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+}
+
+/*  Libre */

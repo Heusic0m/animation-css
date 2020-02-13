@@ -1,0 +1,51 @@
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.colorier {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    background-color: black;
+}
+
+
+
+
+.agrandir {
+    width: 100%;
+    background-color: black;
+}
+
+
+
+.deplacer {
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+.change-font {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+
+.effacer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}

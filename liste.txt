@@ -1,0 +1,74 @@
+hover
+transition est une propriété raccourcie pour:
+- transition-property: désigne les noms des propriétés CSS sur lesquelles un effet de transition devrait être appliqué.
+- transition-duration:  définit le nombre de secondes ou de millisecondes que doit durer une animation. La valeur par défaut, 0s, indique qu'il n'y aura aucune animation 
+- transition-timing-function: décrit la façon dont les valeurs intermédiaires des propriétés CSS affectées par un effet de transition sont calculées. Ceci permet donc de définir une courbe d'accelération, de manière à ce que la vitesse de la transition varie au cours de sa durée.
+(linear, steps(nbre d'escale,end),ease-in-out,cubic-bezier(cubic-bezier.com)
+
+Les valeurs prédéfinies possibles sont :
+
+ease : rapide au début et ralenti à la fin.
+
+linear : vitesse constante.
+
+ease-in : lent au début et accélère de plus en plus à la fin.
+
+ease-out : rapide au début et de plus en plus lent à la fin.
+
+ease-in-out : départ et fin lents.
+
+- transition-delay:indique la durée à attendre avant de débuter la transition qui s'applique pour un changement de propriété.
+
+keyframes
+La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions. (utiliser les % pour que ca fonctionne sur tous les browser)
+
+animation
+La propriété animation est une propriété raccourcie qui permet de d'appliquer une animation entre des styles.
+
+C'est une propriété qui synthétise les propriétés suivantes :
+
+La propriété animation-name définit une liste d'animations qui doivent être appliquées à l'élément ciblé. Chaque nom indique une règle @ @keyframes qui définit les valeurs des propriétés pour la séquence.
+(slide et bounce)
+
+La propriété animation-duration définit la durée d'une animation pour parcourir un cycle.
+
+
+
+La propriété animation-timing-function définit la façon dont une animation CSS doit se dérouler au fur et à mesure de chaque cycle. Cette propriété prendra comme valeurs une ou plusieurs fonctions <timing-function>. (linear, steps(nbre d'escale,end),ease-in-out,cubic-bezier(voir son utilisation)
+
+La propriété animation-delay définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément.
+
+La propriété animation-iteration-count indique le nombre de cycles utilisés pour répéter une animation avant que celle-ci s'arrête.
+
+La propriété animation-direction indique si les cycles de l'animation doivent être joués dans le sens inverse et/ou de façon alternée.(normal,reverse,alternate,alternate-reverse)
+
+La propriété animation-fill-mode indique la façon dont une animation CSS doit appliquer les styles à sa cible avant et après son exécution.
+animation-play-state.
+
+forwards
+La cible retiendra les valeurs calculées définies lors de la dernière étape (keyframe). La dernière étape considérée dépend de la valeur de animation-direction et de animation-iteration-count :
+animation-direction	animation-iteration-count	dernière keyframe
+normal	pair ou impair	100% ou to
+reverse	pair ou impair	0% ou from
+alternate	pair	0% ou from
+alternate	impair	100% ou to
+alternate-reverse	pair	100% ou to
+alternate-reverse	impair	0% ou from
+backwards
+L'animation appliquera les valeur définies par la première keyframe pertinente et les retiendra pendant la durée indiquée par animation-delay. La première keyframe pertinente dépend de la valeur de animation-direction :
+animation-direction	première keyframe
+normal ou alternate	0% ou from
+reverse ou alternate-reverse	100% ou to
+both
+L'animation respectera les règles qui s'appliquent à forwards et backwards, entraînant ainsi l'extension des propriétés de l'animation dans les deux directions
+
+La propriété animation-play-state définit si une animation est en cours d'exécution ou si elle est en pause.(paused,running)
+
+
+C'est quoi perspective origin?
+preserve 3d?
+Les axes
+transform origin?
+.cube div
+
+

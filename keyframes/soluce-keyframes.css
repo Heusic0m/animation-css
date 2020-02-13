@@ -1,0 +1,76 @@
+/* Pour ces exercices, inutile d'utiliser les :hover. 
+(Cependant, toutes les transitions sont utilisables en :hover) */
+.mes-rectangles {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes transform {
+    0% { transform: translate(120px);}
+    30% { transform: scale(2); }
+    68%, 72% { transform:rotate(30deg); }
+    100% { transform:rotate(-60deg); }
+  }
+
+.rectangle1 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    animation:transform 10s;
+}
+
+/* Appliquer plusieurs transformations*/
+@keyframes continue {
+    0% { transform: translate(120px);}
+    30% { transform: scale(2); }
+    68%, 72% { transform:rotate(30deg); }
+    100% { transform:rotate(-60deg); }
+  }
+
+.rectangle2 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    animation: continue 5s infinite;
+}
+
+/*Utiliser Keyframe avec une animation en continu   */
+
+
+@keyframes step {
+    0% { transform: translate(120px);}
+    30% { transform: scale(2); }
+    68%, 72% { transform:rotate(30deg); }
+    100% { transform:rotate(-60deg); }
+  }
+.rectangle3 {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    animation: step steps(5) 8s;
+}
+
+/*Utiliser Keyframe en step by step  */
+@keyframes stay {
+    0% { transform: translate(120px);}
+    30% { transform: scale(2); }
+    68%, 72% { transform:rotate(30deg); }
+    100% { transform:rotate(-60deg); }
+  }
+.rectangle4 {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    animation: stay 5s forwards; 
+}
+
+/*Après l'animation la forme ne change plus de place  */
+
+.rectangle5 {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+}
+
+/*  Libre */
