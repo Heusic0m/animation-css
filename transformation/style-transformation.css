@@ -27,7 +27,8 @@ ease-in-out : départ et fin lentes.
 .rectangle1 {
     width: 120px;
     height: 120px;
-    background-color: red;
+    background-color: green;
+    transform: rotate(2turn) translate(120px);
 }
 
 /* Appliquer une transformation de son choix */

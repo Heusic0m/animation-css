@@ -21,6 +21,7 @@ ease-in-out : départ et fin lentes.
     height: 120px;
     background-color: red;
     transition: background-color 7s;
+    transform: rotate(2turn) translate(120px)
 }
 
 /* faire apparaître le rectangle de la couleur de son choix. 
